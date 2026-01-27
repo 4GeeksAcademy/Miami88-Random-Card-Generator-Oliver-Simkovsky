@@ -12,30 +12,36 @@
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 </head>
 
-<body class="bg-success container-fluid">
-  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+<body class="bg-success vh-100">
+  <div class="d-flex justify-content-center"><h1>Cards!</h1></div>
   
-    <div class="d-flex justify-content-center align-items-center flex-column">
-      <h1 class="border">Cards!</h1>
-      <div class="bg-white p-4 rounded w-25 h-auto w-sm-50 w-md-25">
-        <div class="row border">
+  <div class="container-fluid h-100 d-flex justify-content-center align-items-center">
+    <div class="card-container bg-white p-4 rounded">
+      <div class="h-100 d-flex flex-column">
+
+        <div class="row">
           <div class="col-2 fs-1">♣</div>
           <div class="col-10"></div>
         </div>
-        <div class="row border">
+
+        <div class="row my-auto">
           <div class="col-5"></div>
           <div class="col-2 fs-1">#</div>
           <div class="col-5"></div>
         </div>
-        <div class="row border">
+
+        <div class="row">
           <div class="col-10"></div>
           <div class="col-2 fs-1">♣</div>
         </div>
+
       </div>
     </div>
 
-  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  </div>
+
   <script type="module" src="/app.js"></script>
 </body>
+
 
 </html>

@@ -3,3 +3,8 @@
 body{
     background: white;
 }
+
+.card-container{
+    height: 60dvh;
+    width: 35dvh;
+}
