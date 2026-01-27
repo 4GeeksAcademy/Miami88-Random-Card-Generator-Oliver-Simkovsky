@@ -8,3 +8,9 @@ body{
     height: 60dvh;
     width: 35dvh;
 }
+
+.reverse{
+    display: inline-block;
+    transform: rotate(180deg);
+    transform-origin: center;
+}
