@@ -57,7 +57,6 @@ window.onload = function () {
         topLeft.className = "col-2 fs-1";
         topLeft.textContent = suits[randomSuits];
         if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
-            //topLeft.className = "col-2 fs-1 text-danger";
             topLeft.classList.remove("text-dark", "text-danger");
             topLeft.classList.add("text-danger");
 
@@ -103,7 +102,6 @@ window.onload = function () {
         bottomRight.className = "reverse col-2 fs-1";
         bottomRight.textContent = suits[randomSuits];
         if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
-            //bottomRight.className = "col-2 fs-1 text-danger";
             bottomRight.classList.remove("text-dark", "text-danger");
             bottomRight.classList.add("text-danger");
 
