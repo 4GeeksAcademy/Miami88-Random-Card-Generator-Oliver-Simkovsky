@@ -45,6 +45,12 @@ window.onload = function () {
         const topLeft = document.createElement("div");
         topLeft.className = "col-2 fs-1";
         topLeft.textContent = suits[randomSuits];
+        if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
+            //topLeft.className = "col-2 fs-1 text-danger";
+            topLeft.classList.remove("text-dark", "text-danger");
+            topLeft.classList.add("text-danger");                 
+
+        }
 
         const topRight = document.createElement("div");
         topRight.className = "col-10";
@@ -63,6 +69,9 @@ window.onload = function () {
         const midCenter = document.createElement("div");
         midCenter.className = "col-2 fs-1";
         midCenter.textContent = num[randomNum];
+        if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
+            midCenter.className = "col-2 fs-1 text-danger";
+        }
 
         const midRight = document.createElement("div");
         midRight.className = "col-5";
@@ -82,6 +91,13 @@ window.onload = function () {
         const bottomRight = document.createElement("div");
         bottomRight.className = "reverse col-2 fs-1";
         bottomRight.textContent = suits[randomSuits];
+        if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
+            //bottomRight.className = "col-2 fs-1 text-danger";
+            bottomRight.classList.remove("text-dark", "text-danger"); 
+            bottomRight.classList.add("text-danger"); 
+
+
+        }
 
 
         bottomRow.appendChild(bottomLeft);

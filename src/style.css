@@ -9,7 +9,7 @@ body{
     width: 35dvh;
 }
 
-.reverse{
+.card-container .reverse {
     display: inline-block;
     transform: rotate(180deg);
     transform-origin: center;
