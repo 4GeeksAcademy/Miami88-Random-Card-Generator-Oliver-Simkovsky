@@ -9,7 +9,15 @@ window.onload = function () {
     const container = document.querySelector("#container");
     const button = document.querySelector("#btn");
 
+    let suits = ["♦", "♥", "♠", "♣"];
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
     function addButton(e) {
+        
+        let randomSuits = Math.floor(Math.random() * suits.length);
+        let randomNum = Math.floor(Math.random() * num.length);
+
+        console.log(suits[randomSuits] + num[randomNum]);
         // most outer div
         const obj = document.createElement("div");
         obj.className = "obj container-fluid h-100 d-flex justify-content-center align-items-center";
