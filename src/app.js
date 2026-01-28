@@ -23,8 +23,8 @@ window.onload = function () {
         inner.className = "h-100 d-flex flex-column";
 
         // top row
-        const row = document.createElement("div");
-        row.className = "row";
+        const topRow = document.createElement("div");
+        topRow.className = "row";
 
         // top left
         const topLeft = document.createElement("div");
@@ -56,6 +56,30 @@ window.onload = function () {
         midRow.appendChild(midCenter);
         midRow.appendChild(midRight);
 
+        // bottom row
+
+        const bottomRow = document.createElement("div");
+        bottomRow.className = "row";
+
+        const bottomLeft = document.createElement("div");
+        bottomLeft.className = "col-10";
+
+        const bottomRight = document.createElement("div");
+        bottomRight.className = "reverse col-2 fs-1";
+        bottomRight.textContent = "♣";
+
+
+        bottomRow.appendChild(bottomLeft);
+        bottomRow.appendChild(bottomRight);
+
+        // all together
+        inner.appendChild(topRow);
+        inner.appendChild(midRow);
+        inner.appendChild(bottomRow);
+
+        cardContainer.appendChild(inner);
+        obj.appendChild(cardContainer);
+        container.appendChild(obj);
     }
 
     button.addEventListener("click", addButton);
