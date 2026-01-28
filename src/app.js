@@ -37,7 +37,7 @@ window.onload = function () {
         // top left
         const topLeft = document.createElement("div");
         topLeft.className = "col-2 fs-1";
-        topLeft.textContent = "♣";
+        topLeft.textContent = suits[randomSuits];
 
         const topRight = document.createElement("div");
         topRight.className = "col-10";
@@ -55,7 +55,7 @@ window.onload = function () {
 
         const midCenter = document.createElement("div");
         midCenter.className = "col-2 fs-1";
-        midCenter.textContent = "#";
+        midCenter.textContent = num[randomNum];
 
         const midRight = document.createElement("div");
         midRight.className = "col-5";
@@ -74,7 +74,7 @@ window.onload = function () {
 
         const bottomRight = document.createElement("div");
         bottomRight.className = "reverse col-2 fs-1";
-        bottomRight.textContent = "♣";
+        bottomRight.textContent = suits[randomSuits];
 
 
         bottomRow.appendChild(bottomLeft);
