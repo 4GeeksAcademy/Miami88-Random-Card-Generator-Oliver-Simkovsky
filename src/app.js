@@ -18,6 +18,17 @@ window.onload = function () {
     document.querySelector(".suit-top").textContent = suits[firstRandomSuits];
     document.querySelector(".suit-bottom").textContent = suits[firstRandomSuits];
     document.querySelector(".card-number").textContent = num[firstRandomNum];
+    if (suits[firstRandomSuits] === "♥" || suits[firstRandomSuits] === "♦") {
+        document.querySelector(".suit-top").classList.remove("text-dark", "text-danger");
+        document.querySelector(".suit-top").classList.add("text-danger");
+
+        document.querySelector(".card-number").classList.remove("text-dark", "text-danger");
+        document.querySelector(".card-number").classList.add("text-danger");
+
+        document.querySelector(".suit-bottom").classList.remove("text-dark", "text-danger");
+        document.querySelector(".suit-bottom").classList.add("text-danger");
+
+    }
 
     function addButton(e) {
 
@@ -48,7 +59,7 @@ window.onload = function () {
         if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
             //topLeft.className = "col-2 fs-1 text-danger";
             topLeft.classList.remove("text-dark", "text-danger");
-            topLeft.classList.add("text-danger");                 
+            topLeft.classList.add("text-danger");
 
         }
 
@@ -93,8 +104,8 @@ window.onload = function () {
         bottomRight.textContent = suits[randomSuits];
         if (suits[randomSuits] === "♥" || suits[randomSuits] === "♦") {
             //bottomRight.className = "col-2 fs-1 text-danger";
-            bottomRight.classList.remove("text-dark", "text-danger"); 
-            bottomRight.classList.add("text-danger"); 
+            bottomRight.classList.remove("text-dark", "text-danger");
+            bottomRight.classList.add("text-danger");
 
 
         }
