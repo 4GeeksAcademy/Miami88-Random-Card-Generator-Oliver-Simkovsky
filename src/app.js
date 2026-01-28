@@ -12,8 +12,15 @@ window.onload = function () {
     let suits = ["♦", "♥", "♠", "♣"];
     let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
+    let firstRandomSuits = Math.floor(Math.random() * suits.length);
+    let firstRandomNum = Math.floor(Math.random() * num.length);
+
+    document.querySelector(".suit-top").textContent = suits[firstRandomSuits];
+    document.querySelector(".suit-bottom").textContent = suits[firstRandomSuits];
+    document.querySelector(".card-number").textContent = num[firstRandomNum];
+
     function addButton(e) {
-        
+
         let randomSuits = Math.floor(Math.random() * suits.length);
         let randomNum = Math.floor(Math.random() * num.length);
 
