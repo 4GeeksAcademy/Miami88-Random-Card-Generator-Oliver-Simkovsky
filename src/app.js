@@ -38,7 +38,7 @@ window.onload = function () {
         console.log(suits[randomSuits] + num[randomNum]);
         // most outer div
         const obj = document.createElement("div");
-        obj.className = "obj container-fluid h-100 d-flex justify-content-center align-items-center";
+        obj.className = "col-4 obj container-fluid h-100 d-flex justify-content-center align-items-center";
 
         // card container
         const cardContainer = document.createElement("div");
